@@ -1,0 +1,4 @@
+﻿E:\Software\VisualStudio\2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(498,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+E:\Software\VisualStudio\2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  pch.cpp
+  RETCON-Engine.vcxproj -> Z:\C++\RETCON-Engine\bin\Debug-Win32\RETCON.Core.dll
