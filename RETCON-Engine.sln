@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32901.82
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RETCON-Engine", "RETCON-Engine\RETCON-Engine.vcxproj", "{1A9DE982-2C2A-4081-8AF2-4645417659FD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RETCON-Core", "RETCON-Core\RETCON-Core.vcxproj", "{1A9DE982-2C2A-4081-8AF2-4645417659FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,6 @@
+#pragma once
+
+/*
+* ENTRY POINT FOR RETCON
+* USED FOR C++ APPS USING RETCON CORE
+*/

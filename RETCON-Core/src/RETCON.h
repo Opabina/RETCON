@@ -1,0 +1,5 @@
+#pragma once
+
+/*
+* THIS FILE IS FOR USE BY EXTERNAL APPLICATIONS ONLY
+*/
