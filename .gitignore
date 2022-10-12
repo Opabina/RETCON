@@ -7,6 +7,10 @@
 *.o
 *.obj
 
+# Output Directories
+bin/
+obj/
+
 # Precompiled Headers
 *.gch
 *.pch
