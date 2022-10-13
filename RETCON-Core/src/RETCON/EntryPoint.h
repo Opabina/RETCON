@@ -13,14 +13,11 @@
 	int main(int argc, char** argv) {
 		// Initialize Loggers
 		RETCON::LoggerAssistant::Init();
-		RETCON_CORE_SUCCESS_LINE("Logger Initialized!");
-		RETCON_INFO_LINE("Creating Application...");
+		RETCON_CORE_SUCCESS_LINE("Core Logger Initialized!");
+		RETCON_SUCCESS_LINE("Application Logger Initialized!");
 
 		// Create App
 		auto app = RETCON::CreateApplication();
-		RETCON_SUCCESS("Application Created! ");
-		RETCON_INFO_LINE("Running...");
-
 		app->Run();
 		delete app;
 	}
