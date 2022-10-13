@@ -9,3 +9,5 @@
 // C++ STANDARD LIBRARIES
 #include <iostream>
 #include <string>
+
+#include <memory>

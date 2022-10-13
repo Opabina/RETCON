@@ -3,6 +3,7 @@
 #include "TextUtils.h"
 
 namespace RETCON {
+	// - LOGGER CLASS -
 	// Constructors / Deconstructors
 	Logger::Logger(std::string name)
 		: m_Name(name)
@@ -52,5 +53,14 @@ namespace RETCON {
 		}
 
 		LogLine("Assertion failed!", LogType::Error);
+	}
+
+	// - LOGGER ASSISTANT CLASS -
+	std::shared_ptr<Logger> LoggerAssistant::m_CoreLoggerPtr;
+	std::shared_ptr<Logger> LoggerAssistant::m_AppLoggerPtr;
+
+	void LoggerAssistant::Init() {
+		m_CoreLoggerPtr = std::make_shared<Logger>(Logger("Core"));
+		m_AppLoggerPtr = std::make_shared<Logger>(Logger("Application"));
 	}
 }

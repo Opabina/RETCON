@@ -106,6 +106,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>move $(SolutionDir)$(BaseOutputPath)$(ProjectName)\$(Configuration)-$(Platform)\$(ProjectName).dll $(SolutionDir)$(BaseOutputPath)\Testing\$(Configuration)-$(Platform)\$(ProjectName).dll</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -126,6 +129,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>move $(SolutionDir)$(BaseOutputPath)$(ProjectName)\$(Configuration)-$(Platform)\$(ProjectName).dll $(SolutionDir)$(BaseOutputPath)\Testing\$(Configuration)-$(Platform)\$(ProjectName).dll</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -142,6 +148,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>move $(SolutionDir)$(BaseOutputPath)$(ProjectName)\$(Configuration)-$(Platform)\$(ProjectName).dll $(SolutionDir)$(BaseOutputPath)\Testing\$(Configuration)-$(Platform)\$(ProjectName).dll</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -162,6 +171,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <PostBuildEvent>
+      <Command>move $(SolutionDir)$(BaseOutputPath)$(ProjectName)\$(Configuration)-$(Platform)\$(ProjectName).dll $(SolutionDir)$(BaseOutputPath)\Testing\$(Configuration)-$(Platform)\$(ProjectName).dll</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\RETCON\Logging\Logger.h" />
