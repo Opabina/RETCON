@@ -8,14 +8,21 @@ namespace RETCON {
 
 	void Application::Run() {
 		Logger app = Logger("Application");
-		app.Log("App initialized.", LogType::Info);
-		app.Log("Testing LogType Colors:\n", LogType::Info);
+		app.LogLine("App initialized.", LogType::Info);
+		app.LogLine("Testing LogType Colors:\n", LogType::Info);
 
-		app.Log("LogType::Success", LogType::Success);
-		app.Log("LogType::Info", LogType::Info);
-		app.Log("LogType::Warning", LogType::Warning);
-		app.Log("LogType::Error", LogType::Error);
-		app.Log("LogType::Critical", LogType::Critical);
+		app.LogLine("LogType::Success", LogType::Success);
+		app.LogLine("LogType::Info", LogType::Info);
+		app.LogLine("LogType::Warning", LogType::Warning);
+		app.LogLine("LogType::Error", LogType::Error);
+		app.LogLine("LogType::Critical\n", LogType::Critical);
+
+		app.LogLine("Testing Assertions\n", LogType::Info);
+		app.Log("1 == 1: ", LogType::Info);
+		app.LogAssert(1 == 1);
+
+		app.Log("1 == 5: ", LogType::Info);
+		app.LogAssert(1 == 5);
 
 		std::cin.get();
 		return;
