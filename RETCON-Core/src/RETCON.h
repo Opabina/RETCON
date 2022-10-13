@@ -6,3 +6,9 @@
 
 #include "RETCON/Core.h"
 #include "RETCON/Application.h"
+
+// ENTRY POINT
+
+#include "RETCON/EntryPoint.h"
+
+// ENTRY POINT
