@@ -14,6 +14,8 @@
 	#endif
 #endif
 
-#ifndef RETCON_PLATFORM_WIN
+#if !defined(RETCON_PLATFORM_WIN)
 	#error UNSUPPORTED PLATFORM
 #endif
+
+#define BIT(x) 1 << x

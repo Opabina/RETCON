@@ -1,5 +1,5 @@
 /*
-* -- PRECOMPILED HEADERS FOR RECTON CORE
+* -- PRECOMPILED HEADERS FOR RETCON CORE
 * THIS FILE LINKS TO LIBRARIES THAT ARE COMMONLY USED WITHIN RETCON CORE
 */
 
@@ -9,5 +9,6 @@
 // C++ STANDARD LIBRARIES
 #include <iostream>
 #include <string>
+#include <sstream>
 
 #include <memory>

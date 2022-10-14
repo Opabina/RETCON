@@ -46,13 +46,16 @@ namespace RETCON {
 		return m_LogCount;
 	}
 
-	void Logger::LogAssert(bool assert) {
+	void Logger::LogAssert(bool assert, std::string message) {
 		if (assert) {
 			LogLine("Assertion success!", LogType::Success);
 			return;
 		}
 
-		LogLine("Assertion failed!", LogType::Error);
+		if (message == "")
+			LogLine("Assertion failed!", LogType::Error);
+		else
+			LogLine(message, LogType::Error);
 	}
 
 	// - LOGGER ASSISTANT CLASS -

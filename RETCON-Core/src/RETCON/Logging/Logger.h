@@ -22,7 +22,7 @@ namespace RETCON {
 		void Log(std::string message, LogType type);
 		int GetLogCount();
 
-		void LogAssert(bool assert);
+		void LogAssert(bool assert, std::string message = "");
 
 	private:
 		// Variables, "m_" prefix shows that these variables are private
@@ -59,7 +59,7 @@ namespace RETCON {
 #define RETCON_CORE_CRITICAL_LINE(msg) ::RETCON::LoggerAssistant::GetCoreLogger()->LogLine(msg, RETCON::LogType::Critical)
 #define RETCON_CORE_CRITICAL(msg)      ::RETCON::LoggerAssistant::GetCoreLogger()->Log(msg, RETCON::LogType::Critical)
 
-#define RETCON_CORE_ASSERT(assert)     ::RETCON::LoggerAssistant::GetCoreLogger()->LogAssert(assert)
+#define RETCON_CORE_ASSERT(...)     ::RETCON::LoggerAssistant::GetCoreLogger()->LogAssert(__VA_ARGS__)
 
 // App Logging Macros
 #define RETCON_SUCCESS_LINE(msg)       ::RETCON::LoggerAssistant::GetApplicationLogger()->LogLine(msg, RETCON::LogType::Success)
@@ -77,4 +77,4 @@ namespace RETCON {
 #define RETCON_CRITICAL_LINE(msg)      ::RETCON::LoggerAssistant::GetApplicationLogger()->LogLine(msg, RETCON::LogType::Critical)
 #define RETCON_CRITICAL(msg)           ::RETCON::LoggerAssistant::GetApplicationLogger()->Log(msg, RETCON::LogType::Critical)
 								       
-#define RETCON_ASSERT(assert)          ::RETCON::LoggerAssistant::GetApplicationLogger()->LogAssert(assert)
+#define RETCON_ASSERT(...)          ::RETCON::LoggerAssistant::GetApplicationLogger()->LogAssert(__VA_ARGS__)

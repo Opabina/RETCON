@@ -180,6 +180,11 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\RETCON\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\RETCON\Events\Event.h" />
+    <ClInclude Include="src\RETCON\Events\KeyEvent.h" />
+    <ClInclude Include="src\RETCON\Events\MouseEvent.h" />
+    <ClInclude Include="src\RETCON\KeyCodes.h" />
     <ClInclude Include="src\RETCON\Logging\Logger.h" />
     <ClInclude Include="src\RETCON\Application.h" />
     <ClInclude Include="src\pch.h" />
@@ -187,6 +192,7 @@
     <ClInclude Include="src\RETCON\Core.h" />
     <ClInclude Include="src\RETCON\EntryPoint.h" />
     <ClInclude Include="src\RETCON\Logging\TextUtils.h" />
+    <ClInclude Include="src\RETCON\MouseCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\RETCON\Application.cpp" />
