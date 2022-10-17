@@ -12,7 +12,7 @@
 
 
 namespace RETCON {
-	enum class EventType
+	enum EventType
 	{
 		None = 0,
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,

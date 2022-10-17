@@ -13,6 +13,22 @@
 	int main(int argc, char** argv) {
 		// Initialize Loggers
 		RETCON::LoggerAssistant::Init();
+
+		RETCON_CORE_SUCCESS_LINE("Core Logger Initialized!");
+		RETCON_SUCCESS_LINE("Application Logger Initialized!");
+
+		// Create App
+		auto app = RETCON::CreateApplication();
+		app->Run();
+		delete app;
+	}
+#elif defined(RETCON_PLATFORM_LNX)
+	extern RETCON::Application* RETCON::CreateApplication();
+
+	int main() {
+		// Initialize Loggers
+		RETCON::LoggerAssistant::Init();
+
 		RETCON_CORE_SUCCESS_LINE("Core Logger Initialized!");
 		RETCON_SUCCESS_LINE("Application Logger Initialized!");
 

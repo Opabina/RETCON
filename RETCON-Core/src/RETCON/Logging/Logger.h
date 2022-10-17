@@ -2,6 +2,9 @@
 
 namespace RETCON {
 	// Enum for Logging Types, hex numbers represent color code for console
+	enum class LogType;
+	
+#if defined(RETCON_PLATFORM_WIN)
 	enum class LogType {
 		Success = 0xA,
 		Info = 0xF,
@@ -9,6 +12,15 @@ namespace RETCON {
 		Error = 0xC,
 		Critical = 0x4
 	};
+#elif defined(RETCON_PLATFORM_LNX)
+	enum class LogType {
+		Success = 0x20,
+		Info = 0x25,
+		Warning = 0x21,
+		Error = 0x1F,
+
+	};
+#endif
 
 	// Main Logger Class
 	class RETCON_API Logger {
