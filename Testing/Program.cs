@@ -1,5 +1,5 @@
-﻿using RETCON.Core.Logger;
-using System;
+﻿using System;
+using RETCON.Core.Logger;
 
 namespace Testing
 {
@@ -7,15 +7,19 @@ namespace Testing
     {
         public override void Run()
         {
-            Logger log = new Logger("Application");
-            log.Log("Logger init success!", LogColors.Success);
-            log.Log("Testing Log Colors\n\n", LogColors.Trace, default(ConsoleColor), false);
+            Logger.Engine.Log("-- RETCON GAME ENGINE TESTING --", LogColors.Trace, LogColors.Critical);
+            Logger.Engine.Log("Testing Engine Logger\n\n", LogColors.Trace, default(ConsoleColor), false);
 
-            log.Log("TRACE", LogColors.Trace);
-            log.Log("WARNING", LogColors.Warning);
-            log.Log("ERROR", LogColors.Error);
-            log.Log("CRITICAL", LogColors.Critical);
-            log.Log("SUCCESS", LogColors.Success);
+            // Engine Logger Testing
+            Logger.Engine.Log("ENGINE LOG COUNT SHOULD BE 3", LogColors.Trace);
+            Logger.Engine.Log($"LOG COUNT: {Logger.Engine.GetLogCount()}\n\n", LogColors.Trace, default(ConsoleColor), false);
+
+            Logger.Engine.Log($"ASSERTION TEST", LogColors.Trace);
+            Logger.Engine.Log($"ASSERT [false]:", LogColors.Trace);
+            Logger.Engine.Assert(false);
+
+            Logger.Engine.Log($"ASSERT [true]:", LogColors.Trace);
+            Logger.Engine.Assert(true);
 
             base.Run();
         }

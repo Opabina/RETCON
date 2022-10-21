@@ -1,11 +1,13 @@
-﻿using RETCON.Core.Utils;
-using System;
-using System.Reflection;
+﻿using System;
+using RETCON.Core.Utils;
 
 namespace RETCON.Core.Logger
 {
     public class Logger
     {
+        public static Logger Engine = new Logger("Engine");
+        public static Logger Application = new Logger("Application");
+
         private string _name;
         private int _logCount;
 
@@ -25,6 +27,28 @@ namespace RETCON.Core.Logger
             text += newline ? "\n" : string.Empty;
 
             Console.Write($"[{_name}]: {text}");
+            _logCount++;
+        }
+
+        public int GetLogCount()
+        {
+            return _logCount;
+        }
+
+        public void Assert(bool assert, string success = "Assertion Successful!", string fail = "Assertion Failed!")
+        {
+            if (assert)
+            {
+                Log(success, LogColors.Success);
+                return;
+            }
+
+            Log(fail, LogColors.Error);
+        }
+
+        public override string ToString()
+        {
+            return $"[{_name}]";
         }
     }
 
