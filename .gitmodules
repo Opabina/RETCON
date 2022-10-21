@@ -1,0 +1,3 @@
+[submodule "RETCON-Core/vendor/GLFW"]
+	path = RETCON-Core/vendor/GLFW
+	url = https://github.com/glfw/glfw.git

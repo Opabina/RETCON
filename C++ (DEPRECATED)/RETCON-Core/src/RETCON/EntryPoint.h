@@ -6,6 +6,7 @@
 */
 
 #include "Logging/Logger.h"
+#include "Window/Window.h"
 
 #if defined(RETCON_PLATFORM_WIN)
 	extern RETCON::Application* RETCON::CreateApplication();
@@ -16,6 +17,8 @@
 
 		RETCON_CORE_SUCCESS_LINE("Core Logger Initialized!");
 		RETCON_SUCCESS_LINE("Application Logger Initialized!");
+
+		RETCON::Window window("Title Pending", 640, 200);
 
 		// Create App
 		auto app = RETCON::CreateApplication();
