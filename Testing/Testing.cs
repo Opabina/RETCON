@@ -22,6 +22,10 @@ namespace Testing
             Logger.Application.Log($"{ev}\n", LogColors.Trace, newline: false);
 
             Logger.Application.Log("-- EVENT TESTING --", LogColors.Trace, ConsoleColor.DarkRed);
+
+            RETCON.Core.Window.Window test = new RETCON.Core.Window.Window("RETCON - WINDOW TESTING", 500, 500);
+            
+            test.Render();
             base.Run();
         }
     }

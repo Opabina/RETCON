@@ -1,5 +1,14 @@
 ﻿using System;
 
+/*
+ * DISCLAIMER:
+ * Most of the event code found here is taken from TheCherno, who is developing
+ * a game engine called "Hazel" (https://github.com/TheCherno/Hazel)
+ * 
+ * Please check out their project as it's truly amazing!
+ * We'll be rewriting this code in the future to not copy Hazels Engine Code.
+*/ 
+
 namespace RETCON.Core.Event
 {
     public enum EventType
