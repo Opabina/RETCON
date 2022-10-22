@@ -1,5 +1,5 @@
 # RETCON
-RETCON is a game engine built with C++. It's inspired by the Source engine's Hammer, and is named after the video game [Title_Pending](https://devbeef.com/tp)'s RETCON.
+RETCON is a game engine built with C#. It's inspired by the Source engine's Hammer, and is named after the video game [Title_Pending](https://devbeef.com/tp)'s RETCON.
 
 ## Contributing
 Instructions on Contributing to RETCON can be found in [Contributing.md](./Contributing.md)
