@@ -21,4 +21,8 @@
     <DebugType>portable</DebugType>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Window\" />
+  </ItemGroup>
+
 </Project>

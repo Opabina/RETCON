@@ -11,9 +11,14 @@ namespace RETCON.Core.Logger
         private string _name;
         private int _logCount;
 
+        private ConsoleColor _defaultForeground;
+        private ConsoleColor _defaultBackground;
+
         public Logger(string name)
         {
             _name = name;
+            _defaultForeground = Console.ForegroundColor;
+            _defaultBackground = Console.BackgroundColor;
         }
 
         ~Logger()
@@ -21,12 +26,29 @@ namespace RETCON.Core.Logger
 
         }
 
+        private static bool _prevNewline = true;
         public void Log(string text, ConsoleColor fg, ConsoleColor bg = ConsoleColor.Black, bool newline = true)
         {
             TextUtils.ChangeConsoleColor(fg, bg);
-            text += newline ? "\n" : string.Empty;
+         
+            // Create output string
+            var output = _prevNewline ? $"[{_name}]: {text}" : $"{text}";
+            
+            if(newline)
+            {
+                output += "\n";
+                _prevNewline = true;
+            } else
+            {
+                _prevNewline = false;
+            }
 
-            Console.Write($"[{_name}]: {text}");
+            // Write to output handle
+            Console.Write(output);
+
+            // Post-write
+            TextUtils.ChangeConsoleColor(_defaultForeground, _defaultBackground);
+            
             _logCount++;
         }
 
