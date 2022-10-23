@@ -10,7 +10,7 @@ Instructions on Contributing to RETCON can be found in [Contributing.md](./Contr
 The recommended way to get started with RETCON is by downloading the lastest [release build](https://github.com/Opabina/RETCON/releases)
 
 ### Compiling yourself
-In order to compile RETCON by yourself you'll need [Visual Studio](https://visualstudio.microsoft.com/) and [.NET Core 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)<br>
+In order to compile RETCON by yourself you'll need an IDE like [Visual Studio](https://visualstudio.microsoft.com/) or [JetBrains Rider](https://www.jetbrains.com/rider/) and [.NET Core 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)<br>
 Start by cloning the git repository using either ``https://github.com/Opabina/RETCON.git`` or ``git@github.com:Opabina/RETCON.git``<br><br>
 
 Afterwards open ``RETCON-Engine.sln`` with Visual Studio. From there right-click on ``RETCON-Engine`` in the Solution Explorer and press ``Build Solution``<br>
