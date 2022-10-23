@@ -1,0 +1,1 @@
+﻿Any source code found here is taken from the C# library GLFW.NET. Repository: https://github.com/ForeverZer0/glfw-net

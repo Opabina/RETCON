@@ -5,6 +5,10 @@ using System.Security;
 using System.Text;
 using JetBrains.Annotations;
 
+/*
+ * Original Source Code found at: https://github.com/dcronqvist/opengl-dotnet-template/blob/master/OpenGL/GL.cs
+*/
+
 namespace OpenGL
 {
     /// <summary>
