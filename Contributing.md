@@ -6,7 +6,6 @@ After forking the repository [clone the forked repository](https://docs.github.c
 ## Requirements
 The requirements for contributing to RETCON are pretty loose, but there are some things we'd like you to respect.
 - Private/Protected Variables should start with ``_`` or ``m_``
-- TODO comments must be start with ``TODO: ``
 - Variable and Class Names must be easy to read (Example: ``Application`` or ``CreateWindow()``)
 - [C# Naming Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions) must be followed
 - All code in the projects starting with ``RETCON`` must use the RETCON namespace
