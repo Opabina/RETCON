@@ -12,7 +12,7 @@ The requirements for contributing to RETCON are pretty loose, but there are some
 - All code in the projects starting with ``RETCON`` must use the RETCON namespace
 
 ## Committing
-Once you finish that it's time to make changes to the project. Once you made a change and you feel like it's ready to be uploaded to GitHub [commit](https://github.com/git-guides/git-commit) and then [push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) them to GitHub. (Tip: Most IDEs, like [Visual Studio](https://visualstudio.microsoft.com/), come with these Features built-in, use it!)
+Once you finish that it's time to make changes to the project. Once you made a change and you feel like it's ready to be uploaded to GitHub [commit](https://github.com/git-guides/git-commit) and then [push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) them to GitHub. (Tip: Most IDEs, like [Visual Studio](https://visualstudio.microsoft.com/) or [Rider](https://www.jetbrains.com/rider/), come with these Features built-in, use it!)
 
 ## Creating a Pull Request
 After you pushed your changes to your fork of RETCON and you feel like it's ready to be merged into the main project it's time to create a pull request!<br>
